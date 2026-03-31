@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name] - Portfolio</title>
+    <title>Maria Fernanda Lopez Tuyub - Portfolio</title>
     <style>
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
         * {
             margin: 0;
             padding: 0;
@@ -237,16 +244,15 @@
         }
 
         .profile-image-placeholder {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 400px;
-            background: linear-gradient(135deg, rgba(168, 213, 186, 0.1) 0%, rgba(168, 213, 186, 0.2) 100%);
-            border-radius: 20px;
-            border: 3px dashed var(--primary-green);
-            font-size: 3rem;
-        }
+    flex: 0 0 auto;
+    width: 300px;
+    height: 400px; /* 3:4 ratio */
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
         /* ============ ABOUT SECTION ============ */
         .about-grid {
@@ -660,7 +666,8 @@
             }
 
             .profile-image-placeholder {
-                min-height: 300px;
+                width: 200px;
+                height: 200px;
             }
 
             .about-grid,
@@ -717,7 +724,7 @@
     <!-- ============ NAVBAR ============ -->
     <nav>
         <div class="nav-container">
-            <div class="logo">[Portfolio]</div>
+            <div class="logo">Portfolio</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -740,11 +747,10 @@
     <section id="home">
         <div class="container" style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
             <div class="home-content">
-                <h1>[Your Name]</h1>
-                <p class="tagline">[Your Major/Field]</p>
+                <h1>Maria Fernanda Lopez Tuyub</h1>
+                <p class="tagline">Computer Engineering Student at Georgia Tech</p>
                 <p class="intro-text">
-                    [Your 3-4 sentence introduction here. This is where you introduce yourself, your passion, 
-                    and what you're looking for in your career. Make it engaging and professional.]
+                    I am a Computer Engineering student at Georgia Institute of Technology. I am passionate about building technology that solves real problems and about expanding access to education. I bring experience in competitive programming, firmware development, and social impact projects, and I am actively seeking opportunities to apply my skills in hardware and software engineering.
                 </p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn">View My Work</a>
@@ -752,7 +758,7 @@
                 </div>
             </div>
             <div class="profile-image-placeholder">
-                📸 [Profile Image]
+                <img src="profilepic.jpeg" alt="Profile picture" class="profile-image">
             </div>
         </div>
     </section>
@@ -763,27 +769,23 @@
             <h2>About Me</h2>
             <div class="about-grid">
                 <div class="about-image-placeholder">
-                    🖼️ [About Image]
+                    [About Image]
                 </div>
                 <div class="about-content">
                     <h3>My Story</h3>
                     <p>
-                        [Background: Share your background story. Where did you grow up? What inspired you to 
-                        pursue your current field? What experiences shaped you?]
+                        I grew up in Molas, a small community outside of Merida, Yucatan, where I developed a deep passion for mathematics from an early age. That passion led me to represent Mexico in international math competitions starting at age 11, and eventually to pursue Computer Engineering at Georgia Tech.
                     </p>
                     <p>
-                        [Location & Origin: I'm from [Your City/Region] and [add more context about your origins if relevant].]
+                        Growing up in a community where access to educational resources was limited shaped my commitment to giving back through tutoring, coaching, and outreach.
                     </p>
                     <p>
-                        [Professional Journey: Describe your journey so far—education, early experiences, 
-                        and how they've led you to where you are today.]
+                        At Georgia Tech, I am part of the AR/VR Haptics subteam within the Vertically Integrated Projects program, where I develop ESP32-based firmware and BLE communication systems for haptic feedback hardware. I also participate in hackathons and continue to contribute to math and informatics olympiad communities in Mexico.
                     </p>
                     <div class="interests">
-                        <h4>Interests & Hobbies</h4>
+                        <h4>Interests and Hobbies</h4>
                         <p>
-                            Outside of [your field], I enjoy [hobby 1], [hobby 2], and [hobby 3]. 
-                            I'm passionate about [what makes you unique] and constantly seek opportunities to 
-                            [your learning goal/aspiration].
+                            Outside of engineering, I enjoy coaching math olympiad students, participating in hackathons, and exploring quantitative finance. I am bilingual in Spanish and English and am committed to learning and preserving the Mayan language.
                         </p>
                     </div>
                 </div>
@@ -797,25 +799,24 @@
             <h2>Resume</h2>
             <div class="resume-container">
                 <div class="resume-placeholder">
-                    📄 [Upload Resume PDF]
+                    [Resume PDF Preview]
                 </div>
                 <div class="resume-content">
                     <h3>My Qualifications</h3>
                     <p>
-                        Download my resume to see my complete work history, educational background, 
-                        technical skills, and professional achievements.
+                        Download my resume to see my complete work history, educational background, technical skills, and professional achievements.
                     </p>
                     <p>
                         My resume highlights:
                     </p>
                     <ul style="list-style-position: inside; color: var(--light-text);">
-                        <li>[Key achievement or responsibility]</li>
-                        <li>[Technical skills or certifications]</li>
-                        <li>[Relevant experience or projects]</li>
-                        <li>[Awards or recognitions]</li>
+                        <li>4.00 GPA in Computer Engineering at Georgia Tech</li>
+                        <li>Advanced C++ and Python, embedded systems with ESP32 and BLE</li>
+                        <li>International olympiad medals in mathematics and informatics</li>
+                        <li>Rise Global Fellow — Top 100 out of 14,000+ applicants</li>
                     </ul>
                     <div class="download-btn">
-                        <a href="#" class="btn">⬇️ Download Resume</a>
+                        <a href="Resume_MariaLopez.pdf" class="btn" download>Download Resume</a>
                     </div>
                 </div>
             </div>
@@ -830,19 +831,19 @@
                 <div class="goal-card">
                     <h3>Short-Term Goals (1-2 Years)</h3>
                     <ul>
-                        <li>[Goal 1: e.g., "Secure an internship in a leading tech company"]</li>
-                        <li>[Goal 2: e.g., "Master a new programming language or skill"]</li>
-                        <li>[Goal 3: e.g., "Build 3-5 portfolio projects"]</li>
-                        <li>[Steps to achieve: e.g., "Network at industry events, contribute to open source"]</li>
+                        <li>Secure an internship in embedded systems or hardware engineering</li>
+                        <li>Deepen expertise in AR/VR hardware and haptic feedback systems</li>
+                        <li>Build a strong portfolio of embedded and full-stack projects</li>
+                        <li>Contribute to open-source firmware and competitive programming communities</li>
                     </ul>
                 </div>
                 <div class="goal-card">
                     <h3>Long-Term Goals (5-10 Years)</h3>
                     <ul>
-                        <li>[Goal 1: e.g., "Advance to a senior or leadership role"]</li>
-                        <li>[Goal 2: e.g., "Start my own company or initiative"]</li>
-                        <li>[Goal 3: e.g., "Make a meaningful impact in my field"]</li>
-                        <li>[Steps to achieve: e.g., "Gain leadership experience, develop business acumen"]</li>
+                        <li>Lead hardware or systems engineering at a company building immersive technology</li>
+                        <li>Expand STEM access in Latin America through education and mentorship</li>
+                        <li>Explore roles at the intersection of engineering and quantitative research</li>
+                        <li>Continue mentoring the next generation of math and informatics competitors</li>
                     </ul>
                 </div>
             </div>
@@ -855,29 +856,33 @@
             <h2>Skills</h2>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3>💻 Technical Skills</h3>
+                    <h3>Technical Skills</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">[Skill 1]</span>
-                        <span class="skill-tag">[Skill 2]</span>
-                        <span class="skill-tag">[Skill 3]</span>
-                        <span class="skill-tag">[Skill 4]</span>
+                        <span class="skill-tag">C++ (Advanced)</span>
+                        <span class="skill-tag">Python (Advanced)</span>
+                        <span class="skill-tag">Java (Intermediate)</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">MediaPipe</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Linux</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>🎯 Professional Skills</h3>
+                    <h3>Embedded Systems</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">[Skill 1]</span>
-                        <span class="skill-tag">[Skill 2]</span>
-                        <span class="skill-tag">[Skill 3]</span>
-                        <span class="skill-tag">[Skill 4]</span>
+                        <span class="skill-tag">ESP32</span>
+                        <span class="skill-tag">Arduino / PlatformIO</span>
+                        <span class="skill-tag">BLE</span>
+                        <span class="skill-tag">I2C</span>
+                        <span class="skill-tag">MPU6050 IMU</span>
+                        <span class="skill-tag">Wokwi Simulation</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>🌟 Languages</h3>
+                    <h3>Languages</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">[Language 1]</span>
-                        <span class="skill-tag">[Language 2]</span>
-                        <span class="skill-tag">[Language 3]</span>
+                        <span class="skill-tag">Spanish (Native)</span>
+                        <span class="skill-tag">English (Advanced)</span>
                     </div>
                 </div>
             </div>
@@ -892,26 +897,27 @@
                 <!-- PROJECT 1 -->
                 <div class="project-card">
                     <div class="project-image-placeholder">
-                        🖼️ [Project Image]
+                        [Project Image]
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">[Project Title 1]</h4>
+                        <h4 class="project-title">HypeHub</h4>
                         <p class="project-description">
-                            [Project Description - ~150 words: Explain what the project is, what problem it solves, 
-                            and what you learned from it. Include context on the project's scope and significance.]
+                            A real-time AI-powered dance coaching platform built at Hacklytics 2026. HypeHub uses MediaPipe Pose for computer vision-based body landmark detection and skeletal overlay, enabling frame-by-frame form analysis against reference choreography. The system delivers personalized audio feedback via ElevenLabs TTS and surfaces performance analytics using KMeans clustering. The full pipeline runs from webcam input to structured feedback in under 2 seconds.
                         </p>
                         <div class="tech-stack">
                             <h4>Technologies Used:</h4>
                             <div class="tech-tags">
-                                <span class="tech-tag">[Tech 1]</span>
-                                <span class="tech-tag">[Tech 2]</span>
-                                <span class="tech-tag">[Tech 3]</span>
+                                <span class="tech-tag">MediaPipe Pose</span>
+                                <span class="tech-tag">ElevenLabs TTS</span>
+                                <span class="tech-tag">KMeans Clustering</span>
+                                <span class="tech-tag">Gemini API</span>
+                                <span class="tech-tag">Next.js</span>
                             </div>
                         </div>
-                        <p><strong>Your Contributions:</strong> [Describe your specific role and contributions to this project]</p>
+                        <p><strong>Your Contributions:</strong> Co-developed the skeletal overlay and form analysis pipeline, integrated ElevenLabs audio feedback, and engineered the AI content scheduling feature that generates optimized social media posts from session highlights.</p>
                         <div class="project-links">
-                            <a href="#">🔗 Live Demo</a>
-                            <a href="#">💻 GitHub</a>
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -919,26 +925,28 @@
                 <!-- PROJECT 2 -->
                 <div class="project-card">
                     <div class="project-image-placeholder">
-                        🖼️ [Project Image]
+                        [Project Image]
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">[Project Title 2]</h4>
+                        <h4 class="project-title">ESP32 Haptic Feedback System</h4>
                         <p class="project-description">
-                            [Project Description - ~150 words: Detail what this project entails, 
-                            the technologies involved, and the outcomes or lessons learned.]
+                            As part of Georgia Tech's Vertically Integrated Projects program, I am developing ESP32-based haptic feedback hardware for AR/VR headsets. The system integrates MPU6050 IMU sensors over I2C to capture 6-DOF motion data for real-time gesture recognition. A BLE communication layer streams sensor data and receives haptic commands wirelessly from a host device. Firmware is developed in C++ with Arduino and PlatformIO, with simulation and debugging in Wokwi prior to hardware deployment.
                         </p>
                         <div class="tech-stack">
                             <h4>Technologies Used:</h4>
                             <div class="tech-tags">
-                                <span class="tech-tag">[Tech 1]</span>
-                                <span class="tech-tag">[Tech 2]</span>
-                                <span class="tech-tag">[Tech 3]</span>
+                                <span class="tech-tag">ESP32</span>
+                                <span class="tech-tag">C++ / Arduino</span>
+                                <span class="tech-tag">PlatformIO</span>
+                                <span class="tech-tag">BLE</span>
+                                <span class="tech-tag">MPU6050 IMU</span>
+                                <span class="tech-tag">Wokwi</span>
                             </div>
                         </div>
-                        <p><strong>Your Contributions:</strong> [Describe your specific role and contributions to this project]</p>
+                        <p><strong>Your Contributions:</strong> Implementing the BLE firmware layer, I2C sensor integration, and a simulation-based debugging workflow to reduce hardware iteration cycles before deployment.</p>
                         <div class="project-links">
-                            <a href="#">🔗 Live Demo</a>
-                            <a href="#">💻 GitHub</a>
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -946,26 +954,24 @@
                 <!-- PROJECT 3 -->
                 <div class="project-card">
                     <div class="project-image-placeholder">
-                        🖼️ [Project Image]
+                        [Project Image]
                     </div>
                     <div class="project-content">
-                        <h4 class="project-title">[Project Title 3]</h4>
+                        <h4 class="project-title">Education Empowerment Project</h4>
                         <p class="project-description">
-                            [Project Description - ~150 words: Explain the project's purpose, 
-                            how it was built, and what makes it unique or noteworthy.]
+                            A free tutoring initiative for 25 middle school students from rural communities in Yucatan, integrating personalized lessons and environmental awareness into the curriculum. The program achieved a 100% high school continuation rate among participants. Recognized by Schmidt Futures and The Rhodes Trust as a Top 100 global project out of over 14,000 applicants, and received the Distinguished Yucatecan Award from the State Ministry of Education.
                         </p>
                         <div class="tech-stack">
-                            <h4>Technologies Used:</h4>
+                            <h4>Recognition:</h4>
                             <div class="tech-tags">
-                                <span class="tech-tag">[Tech 1]</span>
-                                <span class="tech-tag">[Tech 2]</span>
-                                <span class="tech-tag">[Tech 3]</span>
+                                <span class="tech-tag">Rise Top 100 / 14,000+</span>
+                                <span class="tech-tag">Distinguished Yucatecan Award</span>
                             </div>
                         </div>
-                        <p><strong>Your Contributions:</strong> [Describe your specific role and contributions to this project]</p>
+                        <p><strong>Your Contributions:</strong> Founded and led the program end-to-end, including curriculum design, direct instruction, and community outreach to rural families.</p>
                         <div class="project-links">
-                            <a href="#">🔗 Live Demo</a>
-                            <a href="#">💻 GitHub</a>
+                            <a href="#">Learn More</a>
+                            <a href="#">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -979,22 +985,34 @@
             <h2>Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">[Month Year] – [Month Year]</div>
-                    <div class="timeline-title">[Job Title]</div>
-                    <div class="timeline-subtitle">[Company Name]</div>
-                    <p>[Describe your role, key responsibilities, and achievements during this position]</p>
+                    <div class="timeline-date">January 2025 – Present</div>
+                    <div class="timeline-title">Hardware Subteam Developer</div>
+                    <div class="timeline-subtitle">GT VIP AR/VR for Multiphysics Learning, Atlanta, GA</div>
+                    <p>Developing ESP32-based haptic feedback hardware for AR/VR headsets, integrating MPU6050 IMU sensors over I2C for 6-DOF gesture recognition and implementing a BLE communication layer in C++ to stream sensor data wirelessly to a host device.</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-date">[Month Year] – [Month Year]</div>
-                    <div class="timeline-title">[Internship Title]</div>
-                    <div class="timeline-subtitle">[Company Name]</div>
-                    <p>[Describe your internship experience, projects worked on, and skills acquired]</p>
+                    <div class="timeline-date">August 2022 – Present</div>
+                    <div class="timeline-title">International Participant and Contributor</div>
+                    <div class="timeline-subtitle">Olympiad in Informatics, Mexico</div>
+                    <p>Awarded two Bronze Medals at the European Girls' Olympiad in Informatics and a Silver at the Ibero-American Olympiad in Informatics. Promoted competitive programming among Mexico's top 30 female students at Google Mexico City and taught algorithms, data structures, and graph theory to a high school club of 30+ students.</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-date">[Month Year] – [Month Year]</div>
-                    <div class="timeline-title">[Previous Role]</div>
-                    <div class="timeline-subtitle">[Company/Organization Name]</div>
-                    <p>[Describe this earlier experience and how it contributed to your professional growth]</p>
+                    <div class="timeline-date">April 2024 – Present</div>
+                    <div class="timeline-title">Public Speaker</div>
+                    <div class="timeline-subtitle">Science Olympiad Events and Career Fairs, Merida, MX</div>
+                    <p>Designed and delivered the "Exploring Opportunities" seminar to 500+ students, partnering with two UADY high schools to promote study-abroad and STEM opportunities.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">August 2017 – Present</div>
+                    <div class="timeline-title">International Participant and Trainer</div>
+                    <div class="timeline-subtitle">Mathematical Olympiad, Mexico</div>
+                    <p>Awarded two Silver Medals at the Pan-American Girls' Mathematical Olympiad and an Honorable Mention at the Asian Pacific Mathematics Olympiad. Trained 50+ top Mexican students across five one-week intensive sessions in combinatorics, number theory, geometry, and algebra.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">April 2023 – May 2024</div>
+                    <div class="timeline-title">Co-founder</div>
+                    <div class="timeline-subtitle">InclusionArte Social Justice Project, Merida, MX</div>
+                    <p>Engaged 230+ students through cultural programming promoting inclusion and Mayan heritage. Selected by the U.S. Embassy and Mexico's Ministry of Education for the Youth in Action exchange program, one of only seven projects chosen nationwide.</p>
                 </div>
             </div>
         </div>
@@ -1006,19 +1024,25 @@
             <h2>Education</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">[Graduation Year]</div>
-                    <div class="timeline-title">[Degree Name]</div>
-                    <div class="timeline-subtitle">[University/School Name]</div>
+                    <div class="timeline-date">Expected May 2029</div>
+                    <div class="timeline-title">Bachelor of Science in Computer Engineering</div>
+                    <div class="timeline-subtitle">Georgia Institute of Technology, Atlanta, GA</div>
                     <p>
-                        GPA: [X.XX] | Honors: [Relevant honors or distinctions]
+                        GPA: 4.00 / 4.00 | Threads: CHEA and SysArc/CS
                     </p>
-                    <p>[Additional coursework, relevant activities, or achievements during your education]</p>
+                    <p>Member of the AR/VR Haptics VIP subteam. Participant in Hacklytics 2026 and HackGT.</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-date">[Year]</div>
-                    <div class="timeline-title">[Certification or Course]</div>
-                    <div class="timeline-subtitle">[Platform/Organization]</div>
-                    <p>[Description of the certification or course and how it enhanced your skills]</p>
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-title">Rise Global Fellow</div>
+                    <div class="timeline-subtitle">Schmidt Futures and The Rhodes Trust</div>
+                    <p>Selected as one of approximately 100 global Rise Fellows for outstanding academic achievement and demonstrated social impact. Top 100 out of 14,000+ applicants worldwide.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Graduated 2023</div>
+                    <div class="timeline-title">High School Diploma</div>
+                    <div class="timeline-subtitle">Escuela Preparatoria 2, UADY, Merida, Yucatan</div>
+                    <p>Pan-American Girls' Mathematical Olympiad silver medalist (2021, 2022). Distinguished Yucatecan Award recipient from the State Ministry of Education.</p>
                 </div>
             </div>
         </div>
@@ -1029,26 +1053,25 @@
         <div class="container">
             <h2>Get In Touch</h2>
             <div class="contact-container">
-                <p>I'm always interested in hearing about new opportunities and connecting with like-minded professionals.</p>
+                <p>I am always interested in hearing about new opportunities and connecting with like-minded professionals.</p>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <h4>📧 Email</h4>
-                        <a href="mailto:[your email]">[your email]</a>
+                        <h4>Email</h4>
+                        <a href="mailto:maria.lopez@gatech.edu">maria.lopez@gatech.edu</a>
                     </div>
                     <div class="contact-item">
-                        <h4>💼 LinkedIn</h4>
-                        <a href="https://linkedin.com/in/[profile]" target="_blank">[LinkedIn Profile]</a>
+                        <h4>LinkedIn</h4>
+                        <a href="https://linkedin.com/in/maria-fernanda-lopez-tuyub" target="_blank">Maria Fernanda Lopez Tuyub</a>
                     </div>
                     <div class="contact-item">
-                        <h4>💻 GitHub</h4>
-                        <a href="https://github.com/[profile]" target="_blank">[GitHub Profile]</a>
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/" target="_blank">GitHub Profile</a>
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="mailto:[your email]" class="social-icon" title="Email">✉️</a>
-                    <a href="https://linkedin.com/in/[profile]" class="social-icon" title="LinkedIn" target="_blank">in</a>
-                    <a href="https://github.com/[profile]" class="social-icon" title="GitHub" target="_blank">⚙️</a>
-                    <a href="https://twitter.com/[profile]" class="social-icon" title="Twitter" target="_blank">𝕏</a>
+                    <a href="mailto:maria.lopez@gatech.edu" class="social-icon" title="Email">@</a>
+                    <a href="https://linkedin.com/in/maria-fernanda-lopez-tuyub" class="social-icon" title="LinkedIn" target="_blank">in</a>
+                    <a href="https://github.com/" class="social-icon" title="GitHub" target="_blank">gh</a>
                 </div>
             </div>
         </div>
@@ -1056,7 +1079,7 @@
 
     <!-- ============ FOOTER ============ -->
     <footer>
-        <p>&copy; 2026 [Your Name]. All rights reserved. | Designed & built by me</p>
+        <p>&copy; 2026 Maria Fernanda Lopez Tuyub. All rights reserved. | Designed &amp; built by me</p>
     </footer>
 
     <!-- ============ JAVASCRIPT ============ -->
