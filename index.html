@@ -244,15 +244,15 @@
         }
 
         .profile-image-placeholder {
-    flex: 0 0 auto;
-    width: 300px;
-    height: 400px; /* 3:4 ratio */
-    border-radius: 20px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+            flex: 0 0 auto;
+            width: 310px;
+            aspect-ratio: 3 / 4;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         /* ============ ABOUT SECTION ============ */
         .about-grid {
@@ -265,10 +265,11 @@
 
         .about-image-placeholder {
             width: 100%;
-            height: 300px;
+            max-width: 430px;
+            aspect-ratio: 3 / 4;
             background: linear-gradient(135deg, rgba(168, 213, 186, 0.1) 0%, rgba(168, 213, 186, 0.2) 100%);
             border-radius: 15px;
-            border: 3px dashed var(--primary-green);
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -750,7 +751,7 @@
                 <h1>Maria Fernanda Lopez Tuyub</h1>
                 <p class="tagline">Computer Engineering Student at Georgia Tech</p>
                 <p class="intro-text">
-                    I am a Computer Engineering student at Georgia Institute of Technology. I am passionate about building technology that solves real problems and about expanding access to education. I bring experience in competitive programming, firmware development, and social impact projects, and I am actively seeking opportunities to apply my skills in hardware and software engineering.
+                    I am passionate about building technology that solves real problems and about expanding access to education. I bring experience in competitive programming, firmware development, and social impact projects, and I am actively seeking opportunities to apply my skills in hardware and software engineering.
                 </p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn">View My Work</a>
@@ -769,7 +770,7 @@
             <h2>About Me</h2>
             <div class="about-grid">
                 <div class="about-image-placeholder">
-                    [About Image]
+                    <img src="mystory.jpeg" alt="My story" class="profile-image">
                 </div>
                 <div class="about-content">
                     <h3>My Story</h3>
@@ -798,9 +799,7 @@
         <div class="container">
             <h2>Resume</h2>
             <div class="resume-container">
-                <div class="resume-placeholder">
-                    [Resume PDF Preview]
-                </div>
+                <iframe src="Resume_MariaLopez.pdf" style="width:100%;height:500px;border-radius:15px;border:none;box-shadow:var(--shadow);" title="Resume"></iframe>
                 <div class="resume-content">
                     <h3>My Qualifications</h3>
                     <p>
@@ -814,6 +813,10 @@
                         <li>Advanced C++ and Python, embedded systems with ESP32 and BLE</li>
                         <li>International olympiad medals in mathematics and informatics</li>
                         <li>Rise Global Fellow — Top 100 out of 14,000+ applicants</li>
+                        <li>Reached 500+ students through the "Exploring Opportunities" public speaking seminar</li>
+                        <li>Co-founded InclusionArte, selected by the U.S. Embassy and Mexico's Ministry of Education for the Youth in Action exchange program</li>
+                        <li>Trained 50+ top Mexican students across five one-week math olympiad intensive sessions</li>
+                        <li>Developed HypeHub, an AI-powered dance coaching web app, at Hacklytics 2026</li>
                     </ul>
                     <div class="download-btn">
                         <a href="Resume_MariaLopez.pdf" class="btn" download>Download Resume</a>
@@ -896,9 +899,6 @@
             <div class="projects-grid">
                 <!-- PROJECT 1 -->
                 <div class="project-card">
-                    <div class="project-image-placeholder">
-                        [Project Image]
-                    </div>
                     <div class="project-content">
                         <h4 class="project-title">HypeHub</h4>
                         <p class="project-description">
@@ -915,18 +915,11 @@
                             </div>
                         </div>
                         <p><strong>Your Contributions:</strong> Co-developed the skeletal overlay and form analysis pipeline, integrated ElevenLabs audio feedback, and engineered the AI content scheduling feature that generates optimized social media posts from session highlights.</p>
-                        <div class="project-links">
-                            <a href="#">Live Demo</a>
-                            <a href="#">GitHub</a>
-                        </div>
                     </div>
                 </div>
 
                 <!-- PROJECT 2 -->
                 <div class="project-card">
-                    <div class="project-image-placeholder">
-                        [Project Image]
-                    </div>
                     <div class="project-content">
                         <h4 class="project-title">ESP32 Haptic Feedback System</h4>
                         <p class="project-description">
@@ -944,35 +937,22 @@
                             </div>
                         </div>
                         <p><strong>Your Contributions:</strong> Implementing the BLE firmware layer, I2C sensor integration, and a simulation-based debugging workflow to reduce hardware iteration cycles before deployment.</p>
-                        <div class="project-links">
-                            <a href="#">Live Demo</a>
-                            <a href="#">GitHub</a>
-                        </div>
                     </div>
                 </div>
 
                 <!-- PROJECT 3 -->
                 <div class="project-card">
-                    <div class="project-image-placeholder">
-                        [Project Image]
-                    </div>
                     <div class="project-content">
-                        <h4 class="project-title">Education Empowerment Project</h4>
+                        <h4 class="project-title"> Discovery Project</h4>
                         <p class="project-description">
-                            A free tutoring initiative for 25 middle school students from rural communities in Yucatan, integrating personalized lessons and environmental awareness into the curriculum. The program achieved a 100% high school continuation rate among participants. Recognized by Schmidt Futures and The Rhodes Trust as a Top 100 global project out of over 14,000 applicants, and received the Distinguished Yucatecan Award from the State Ministry of Education.
+                            ...
                         </p>
                         <div class="tech-stack">
-                            <h4>Recognition:</h4>
+                            <h4>Technologies Used:</h4>
                             <div class="tech-tags">
-                                <span class="tech-tag">Rise Top 100 / 14,000+</span>
-                                <span class="tech-tag">Distinguished Yucatecan Award</span>
+                                <span class="tech-tag">...</span>
                             </div>
-                        </div>
-                        <p><strong>Your Contributions:</strong> Founded and led the program end-to-end, including curriculum design, direct instruction, and community outreach to rural families.</p>
-                        <div class="project-links">
-                            <a href="#">Learn More</a>
-                            <a href="#">GitHub</a>
-                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -1018,72 +998,29 @@
         </div>
     </section>
 
-    <!-- ============ EDUCATION SECTION ============ -->
-    <section id="education" style="background-color: var(--light-beige);">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Expected May 2029</div>
-                    <div class="timeline-title">Bachelor of Science in Computer Engineering</div>
-                    <div class="timeline-subtitle">Georgia Institute of Technology, Atlanta, GA</div>
-                    <p>
-                        GPA: 4.00 / 4.00 | Threads: CHEA and SysArc/CS
-                    </p>
-                    <p>Member of the AR/VR Haptics VIP subteam. Participant in Hacklytics 2026 and HackGT.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-title">Rise Global Fellow</div>
-                    <div class="timeline-subtitle">Schmidt Futures and The Rhodes Trust</div>
-                    <p>Selected as one of approximately 100 global Rise Fellows for outstanding academic achievement and demonstrated social impact. Top 100 out of 14,000+ applicants worldwide.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">Graduated 2023</div>
-                    <div class="timeline-title">High School Diploma</div>
-                    <div class="timeline-subtitle">Escuela Preparatoria 2, UADY, Merida, Yucatan</div>
-                    <p>Pan-American Girls' Mathematical Olympiad silver medalist (2021, 2022). Distinguished Yucatecan Award recipient from the State Ministry of Education.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- ============ CONTACT SECTION ============ -->
     <section id="contact">
         <div class="container">
             <h2>Get In Touch</h2>
             <div class="contact-container">
-                <p>I am always interested in hearing about new opportunities and connecting with like-minded professionals.</p>
+                <p>I am always interested in hearing about new opportunities or meeting new people.</p>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <h4>Email</h4>
-                        <a href="mailto:maria.lopez@gatech.edu">maria.lopez@gatech.edu</a>
+                        <h4><a href="mailto:maria.lopez@gatech.edu">Email</a></h4>
                     </div>
                     <div class="contact-item">
-                        <h4>LinkedIn</h4>
-                        <a href="https://linkedin.com/in/maria-fernanda-lopez-tuyub" target="_blank">Maria Fernanda Lopez Tuyub</a>
+                        <h4><a href="https://linkedin.com/in/maria-fernanda-lopez-tuyub" target="_blank">LinkedIn</a></h4>
                     </div>
                     <div class="contact-item">
-                        <h4>GitHub</h4>
-                        <a href="https://github.com/" target="_blank">GitHub Profile</a>
+                        <h4><a href="https://github.com/maflopeztuyub" target="_blank">GitHub</a></h4>
                     </div>
-                </div>
-                <div class="social-links">
-                    <a href="mailto:maria.lopez@gatech.edu" class="social-icon" title="Email">@</a>
-                    <a href="https://linkedin.com/in/maria-fernanda-lopez-tuyub" class="social-icon" title="LinkedIn" target="_blank">in</a>
-                    <a href="https://github.com/" class="social-icon" title="GitHub" target="_blank">gh</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ============ FOOTER ============ -->
-    <footer>
-        <p>&copy; 2026 Maria Fernanda Lopez Tuyub. All rights reserved. | Designed &amp; built by me</p>
-    </footer>
-
     <!-- ============ JAVASCRIPT ============ -->
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Mobile menu toggle
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
@@ -1103,15 +1040,4 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+                const target = document.query
